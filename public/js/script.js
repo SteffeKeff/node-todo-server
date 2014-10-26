@@ -13,7 +13,7 @@ $(function () {
             // delete http://127.0.0.1:8001/items/itemObj.id
             $.ajax({
                 //url: 'http://127.0.0.1:8001/items/' + items.indexOf(removeButton.siblings().text()),
-                url: 'http://192.168.0.24:8001/items/' + items.indexOf(removeButton.siblings().text()),
+                url: 'http://83.251.232.254:8001/items/' + items.indexOf(removeButton.siblings().text()),
                 type: 'delete',
                 success: function () {
                     //console.log('Deleted');
@@ -45,7 +45,7 @@ $(function () {
         // get http://127.0.0.1:8001/items
         $.ajax({
             //url: 'http://127.0.0.1:8001/items',
-            url: 'http://192.168.0.24:8001/items',
+            url: 'http://83.251.232.254:8001/items',
             type: 'get',
             dataType: 'JSON',
             success: function (json) {
@@ -82,7 +82,7 @@ $(function () {
             // post http://127.0.0.1:8001/items
             $.ajax({
                 //url: 'http://127.0.0.1:8001/items',
-                url: 'http://192.168.0.24:8001/items',
+                url: 'http://83.251.232.254:8001/items',
                 type: 'post',
                 dataType: 'JSON',
                 contentType: 'application/json; charset=utf-8',
